@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic SEO Roadmap: Vancouver Executive Market</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Chart Container Styling - MANDATORY Requirements */
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 650px; /* max-w-2xl equiv */
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px; /* Default height */
+            max-height: 400px;
+        }
+
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Custom Scrollbar for tables */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        /* Transition classes */
+        .fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <!-- Chosen Palette: "Executive Calm" - Warm Neutrals (Stone/Cream) for background, Navy Blue (#1e293b) for primary actions, Amber (#d97706) for highlights/accent ("Champagne"), and Slate for text. -->
+</head>
+<body class="bg-stone-50 text-slate-800 font-sans antialiased selection:bg-amber-200 selection:text-amber-900">
+
+    <!-- App Container -->
+    <div id="app" class="min-h-screen flex flex-col max-w-7xl mx-auto shadow-2xl bg-white border-x border-stone-200">
+
+        <!-- Header -->
+        <header class="bg-slate-900 text-white p-6 md:p-8 shadow-md relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-amber-500">Inscape SEO Roadmap</h1>
+                    <p class="text-slate-400 text-sm mt-1 tracking-wide">Target: Dominating the Vancouver Executive Market</p>
+                </div>
+                <div class="text-right hidden md:block">
+                    <div class="text-xs text-slate-500 uppercase tracking-widest font-semibold">Prepared For</div>
+                    <div class="text-slate-200 font-medium">Greg Nichvalodoff & Stakeholders</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="bg-slate-800/95 backdrop-blur-md text-slate-300 sticky top-0 z-20 overflow-x-auto custom-scrollbar border-b border-slate-700 shadow-sm">
+            <div class="flex px-4 min-w-max">
+                <button onclick="switchTab('mission-control')" class="nav-btn group flex items-center gap-2 px-6 py-4 border-b-4 border-transparent hover:text-white hover:bg-slate-700/50 transition-all active-tab" data-tab="mission-control">
+                    <span>🚀</span> Mission Control
+                </button>
+                <button onclick="switchTab('market-landscape')" class="nav-btn group flex items-center gap-2 px-6 py-4 border-b-4 border-transparent hover:text-white hover:bg-slate-700/50 transition-all" data-tab="market-landscape">
+                    <span>🔭</span> Market Landscape
+                </button>
+                <button onclick="switchTab('health-report')" class="nav-btn group flex items-center gap-2 px-6 py-4 border-b-4 border-transparent hover:text-white hover:bg-slate-700/50 transition-all" data-tab="health-report">
+                    <span>🩺</span> Health Check
+                </button>
+                <button onclick="switchTab('strategy-pivot')" class="nav-btn group flex items-center gap-2 px-6 py-4 border-b-4 border-transparent hover:text-white hover:bg-slate-700/50 transition-all" data-tab="strategy-pivot">
+                    <span>🎯</span> Keyword Tactics
+                </button>
+                <button onclick="switchTab('execution-plan')" class="nav-btn group flex items-center gap-2 px-6 py-4 border-b-4 border-transparent hover:text-white hover:bg-slate-700/50 transition-all" data-tab="execution-plan">
+                    <span>📅</span> Execution Roadmap
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main class="flex-grow p-4 md:p-8 bg-stone-50 overflow-y-auto">
+
+            <!-- VIEW 1: Mission Control -->
+            <section id="mission-control" class="tab-content fade-in block">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+                    <!-- Left Col: Executive Summary -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-200">
+                            <h2 class="text-2xl font-bold text-slate-900 mb-4 border-l-4 border-amber-500 pl-3">Executive Summary: The "Authority Gap"</h2>
+                            <p class="text-slate-600 mb-4 leading-relaxed text-lg">
+                                You currently possess <span class="font-semibold text-amber-600">"Champagne Content"</span> on a <span class="font-semibold text-stone-500">"Beer Budget"</span> domain authority. 
+                            </p>
+                            <p class="text-slate-600 mb-4 leading-relaxed">
+                                Your content quality is Tier 1, utilizing 30+ years of science-backed experience. However, your <strong>Domain Rating (DR10)</strong> prevents Google from trusting you over generic giants like Korn Ferry (DR70+).
+                            </p>
+                            <div class="bg-amber-50 border border-amber-200 p-4 rounded-lg mt-6">
+                                <h3 class="font-bold text-amber-900 mb-2 flex items-center gap-2">
+                                    <span class="text-xl">⚠️</span> The Diagnosis
+                                </h3>
+                                <p class="text-amber-800 text-sm leading-relaxed">
+                                    Recent rankings drops and "noindex" errors are likely <strong>not technical failures</strong>, but algorithmic de-rankings due to this trust gap. Google categorizes your broad content as "ambiguous" without national trust signals.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-200">
+                            <h2 class="text-xl font-bold text-slate-900 mb-4">The Solution: "Big Fish, Small Pond"</h2>
+                            <p class="text-slate-600 mb-6">
+                                We cannot out-muscle global firms on generic terms yet. We must pivot to a <strong>Hyper-Local Strategy</strong>.
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="bg-slate-50 p-5 rounded-lg border border-slate-200 flex flex-col h-full">
+                                    <div class="text-slate-400 text-xs font-bold uppercase mb-1 tracking-wider">Current State</div>
+                                    <div class="font-bold text-slate-800 text-lg">Generic National Targeting</div>
+                                    <p class="text-xs text-slate-500 mt-2">Competing with McKinsey & Korn Ferry.</p>
+                                </div>
+                                <div class="bg-blue-50 p-5 rounded-lg border border-blue-200 flex flex-col h-full">
+                                    <div class="text-blue-500 text-xs font-bold uppercase mb-1 tracking-wider">Future State (90 Days)</div>
+                                    <div class="font-bold text-blue-900 text-lg">Dominate "Vancouver" Modifiers</div>
+                                    <p class="text-xs text-blue-700 mt-2">Competing with Kwela & Incrementa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Col: Visualization -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-stone-200 h-full flex flex-col">
+                            <h3 class="font-bold text-slate-700 mb-6 text-center text-lg">The Authority Gap Visualization</h3>
+                            <div class="chart-container flex-grow flex items-center justify-center">
+                                <canvas id="authorityChart"></canvas>
+                            </div>
+                            <p class="text-xs text-center text-slate-400 mt-6 italic">Comparing Estimated Domain Ratings (DR) from Ahrefs</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 2: Market Landscape -->
+            <section id="market-landscape" class="tab-content fade-in hidden">
+                <div class="mb-8 max-w-4xl">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-2">Market Landscape & Competitors</h2>
+                    <p class="text-slate-600 text-lg">
+                        You are a <strong>Boutique Specialist</strong> competing against Global Generalists. Your primary threats are not the giants, but the local firms who have already mastered local SEO targeting.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                    <!-- Chart -->
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200">
+                        <h3 class="font-bold text-slate-700 mb-4">Competitor Threat Levels</h3>
+                        <div class="chart-container">
+                            <canvas id="competitorChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Insight Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Card 1 -->
+                        <div class="bg-red-50 p-5 rounded-xl border border-red-100 flex flex-col justify-between hover:shadow-sm transition-shadow">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-red-900 text-lg">Kwela Leadership</h4>
+                                    <span class="bg-red-200 text-red-800 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wide">High Threat</span>
+                                </div>
+                                <p class="text-sm text-red-800 mb-2 opacity-90">Strong local SEO. Explicitly targets "Vancouver" in headers.</p>
+                            </div>
+                            <a href="https://kwelaleadership.com" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-red-600 hover:text-red-800 mt-2 block flex items-center gap-1">Visit Site &rarr;</a>
+                        </div>
+                         <!-- Card 2 -->
+                         <div class="bg-amber-50 p-5 rounded-xl border border-amber-100 flex flex-col justify-between hover:shadow-sm transition-shadow">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-amber-900 text-lg">Incrementa</h4>
+                                    <span class="bg-amber-200 text-amber-800 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wide">Med Threat</span>
+                                </div>
+                                <p class="text-sm text-amber-800 mb-2 opacity-90">Good content strategy. Captures mid-market search traffic.</p>
+                            </div>
+                            <a href="https://incrementa.ca" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-amber-600 hover:text-amber-800 mt-2 block flex items-center gap-1">Visit Site &rarr;</a>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-amber-50 p-5 rounded-xl border border-amber-100 flex flex-col justify-between hover:shadow-sm transition-shadow">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-amber-900 text-lg">SME Strategy</h4>
+                                    <span class="bg-amber-200 text-amber-800 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wide">Med Threat</span>
+                                </div>
+                                <p class="text-sm text-amber-800 mb-2 opacity-90">Niche competitor with overlapping keyword targets.</p>
+                            </div>
+                            <a href="https://smestrategy.net" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-amber-600 hover:text-amber-800 mt-2 block flex items-center gap-1">Visit Site &rarr;</a>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="bg-emerald-50 p-5 rounded-xl border border-emerald-100 flex flex-col justify-between hover:shadow-sm transition-shadow">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <h4 class="font-bold text-emerald-900 text-lg">Korn Ferry / McKinsey</h4>
+                                    <span class="bg-emerald-200 text-emerald-800 text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wide">Low Threat</span>
+                                </div>
+                                <p class="text-sm text-emerald-800 mb-2 opacity-90">Different league. We stop fighting them on broad terms.</p>
+                            </div>
+                            <span class="text-xs font-semibold text-emerald-600 mt-2 block opacity-50 cursor-not-allowed">Global Giant</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 3: Health Report -->
+            <section id="health-report" class="tab-content fade-in hidden">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                    <!-- Left: Radar Chart -->
+                    <div class="lg:col-span-5 flex">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 text-center w-full flex flex-col">
+                            <h3 class="font-bold text-slate-700 mb-2 text-lg">Current SEO Report Card</h3>
+                            <div class="text-5xl font-black text-amber-500 mb-6 tracking-tighter">C-</div>
+                            <div class="chart-container flex-grow flex items-center justify-center">
+                                <canvas id="reportCardChart"></canvas>
+                            </div>
+                            <p class="text-sm text-amber-600 font-medium mt-6 bg-amber-50 py-2 rounded-md">Action: Pivot is required immediately.</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Critical Issues List -->
+                    <div class="lg:col-span-7 flex">
+                        <div class="bg-white p-8 rounded-xl shadow-sm border border-stone-200 w-full flex flex-col">
+                            <h2 class="text-xl font-bold text-slate-900 mb-8 border-b border-stone-100 pb-4">Technical & Content Snapshot</h2>
+                            
+                            <div class="space-y-8 flex-grow">
+                                <div class="flex gap-5 items-start group">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-slate-100 group-hover:bg-amber-100 transition-colors rounded-full flex items-center justify-center text-slate-600 group-hover:text-amber-600 font-bold text-lg">1</div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-lg">False Positive 'Noindex' Panic</h4>
+                                        <p class="text-slate-600 mt-2 leading-relaxed">Pages reported as "Excluded" are likely "Crawled - Not Indexed" due to <strong>low authority signals</strong>, not technical robot blocks.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 items-start group">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-slate-100 group-hover:bg-amber-100 transition-colors rounded-full flex items-center justify-center text-slate-600 group-hover:text-amber-600 font-bold text-lg">2</div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-lg">Keyword Cannibalization</h4>
+                                        <p class="text-slate-600 mt-2 leading-relaxed">Your vast blog competes with itself. Instead of one "Power Page" on Leadership, you have 10 diluted posts.</p>
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 items-start group">
+                                    <div class="flex-shrink-0 w-12 h-12 bg-slate-100 group-hover:bg-amber-100 transition-colors rounded-full flex items-center justify-center text-slate-600 group-hover:text-amber-600 font-bold text-lg">3</div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800 text-lg">Authority Bottle Neck</h4>
+                                        <p class="text-slate-600 mt-2 leading-relaxed">DR10 is insufficient to support your volume of content against DR70+ competitors on a national stage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 4: Strategy Pivot (Keywords) -->
+            <section id="strategy-pivot" class="tab-content fade-in hidden">
+                <div class="mb-6">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-2">The "Golden 20" Keyword Strategy</h2>
+                    <p class="text-slate-600 max-w-3xl">
+                        Focusing on <strong>Transactional Intent</strong> to generate revenue, not just readers. We are deprioritizing "tire-kicker" terms (jobs, salary) in favor of "hiring" terms.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+                    <!-- Filters & Table -->
+                    <div class="lg:col-span-2">
+                        <div class="bg-white rounded-xl shadow-sm border border-stone-200 overflow-hidden flex flex-col h-[500px]">
+                            <div class="p-4 border-b border-stone-100 bg-stone-50 flex flex-wrap gap-2 items-center justify-between">
+                                <h3 class="font-bold text-slate-700">Keyword Targets</h3>
+                                <div class="flex gap-2 text-sm">
+                                    <button class="filter-btn px-4 py-1.5 rounded-full bg-slate-800 text-white font-medium hover:bg-slate-700 transition active shadow-sm" data-filter="all">All</button>
+                                    <button class="filter-btn px-4 py-1.5 rounded-full bg-white border border-stone-200 text-slate-600 hover:bg-amber-50 hover:text-amber-700 hover:border-amber-200 transition" data-filter="S">Tier S (Revenue)</button>
+                                    <button class="filter-btn px-4 py-1.5 rounded-full bg-white border border-stone-200 text-slate-600 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 transition" data-filter="A">Tier A (Growth)</button>
+                                </div>
+                            </div>
+                            <div class="overflow-y-auto flex-grow custom-scrollbar">
+                                <table class="w-full text-left text-sm">
+                                    <thead class="bg-stone-50 sticky top-0 z-10 shadow-sm">
+                                        <tr>
+                                            <th class="p-4 font-bold text-slate-600 text-xs uppercase tracking-wider">Keyword</th>
+                                            <th class="p-4 font-bold text-slate-600 text-xs uppercase tracking-wider">Tier</th>
+                                            <th class="p-4 font-bold text-slate-600 text-xs uppercase tracking-wider">Intent</th>
+                                            <th class="p-4 font-bold text-slate-600 text-right text-xs uppercase tracking-wider">Relevance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="keywordTableBody" class="divide-y divide-stone-100 text-slate-700">
+                                        <!-- JS Populates this -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bubble Chart -->
+                    <div class="lg:col-span-1">
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200 h-[500px] flex flex-col">
+                            <h3 class="font-bold text-slate-700 mb-4 text-center">Opportunity Map</h3>
+                            <div class="flex-grow chart-container">
+                                <canvas id="keywordBubbleChart"></canvas>
+                            </div>
+                            <div class="mt-4 pt-4 border-t border-stone-100 text-xs text-slate-500 space-y-2">
+                                <p class="flex items-center"><span class="inline-block w-3 h-3 rounded-full bg-amber-500 mr-2 shadow-sm"></span>Tier S (Vancouver/Transactional)</p>
+                                <p class="flex items-center"><span class="inline-block w-3 h-3 rounded-full bg-blue-500 mr-2 shadow-sm"></span>Tier A (Commercial Growth)</p>
+                                <p class="flex items-center"><span class="inline-block w-3 h-3 rounded-full bg-slate-400 mr-2 shadow-sm"></span>Tier B (Info/Authority)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 5: Execution Plan -->
+            <section id="execution-plan" class="tab-content fade-in hidden">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-2 text-center">90-Day Strategic Blueprint</h2>
+                    <p class="text-slate-600 text-center mb-10 text-lg">A phased approach to pivot from broad obscurity to local dominance.</p>
+
+                    <div class="space-y-6">
+                        <!-- Phase 1 -->
+                        <div class="group relative bg-white border border-l-[6px] border-amber-500 rounded-r-xl shadow-sm hover:shadow-md transition-all overflow-hidden">
+                            <button class="w-full text-left p-6 md:p-8 flex justify-between items-center focus:outline-none" onclick="togglePhase('phase1')">
+                                <div>
+                                    <div class="text-xs font-bold text-amber-600 uppercase tracking-widest mb-1">Days 1-30</div>
+                                    <h3 class="text-xl font-bold text-slate-800">Phase 1: The Local Pivot</h3>
+                                    <p class="text-slate-500 text-sm mt-1 group-hover:text-slate-700 transition-colors">Objective: Intercept local leads immediately.</p>
+                                </div>
+                                <div class="h-10 w-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-amber-50 transition-colors">
+                                    <span id="icon-phase1" class="text-xl text-slate-300 group-hover:text-amber-500 transform transition-transform duration-300">▼</span>
+                                </div>
+                            </button>
+                            <div id="content-phase1" class="hidden px-6 pb-8 md:px-8 bg-amber-50/50 border-t border-amber-100/50">
+                                <ul class="list-disc ml-5 mt-6 space-y-3 text-slate-700 text-sm md:text-base">
+                                    <li><strong class="text-amber-900">Update Meta Data:</strong> Change Title Tags and H1s on core pages.
+                                        <br><em class="text-slate-500 block mt-1 bg-white p-2 rounded border border-amber-100 w-fit">From: "Executive Coaching for High Performance"<br>To: "Executive Coaching in Vancouver | High Performance"</em>
+                                    </li>
+                                    <li><strong class="text-amber-900">Google Business Profile:</strong> Claim and optimize to dominate the "Map Pack".</li>
+                                    <li><strong class="text-amber-900">Quick Win:</strong> Intercept competitors (Kwela) by satisfying local intent.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Phase 2 -->
+                        <div class="group relative bg-white border border-l-[6px] border-blue-500 rounded-r-xl shadow-sm hover:shadow-md transition-all overflow-hidden">
+                            <button class="w-full text-left p-6 md:p-8 flex justify-between items-center focus:outline-none" onclick="togglePhase('phase2')">
+                                <div>
+                                    <div class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-1">Days 31-60</div>
+                                    <h3 class="text-xl font-bold text-slate-800">Phase 2: Content Pruning & Consolidation</h3>
+                                    <p class="text-slate-500 text-sm mt-1 group-hover:text-slate-700 transition-colors">Objective: Stop cannibalization and fix indexation.</p>
+                                </div>
+                                <div class="h-10 w-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-blue-50 transition-colors">
+                                    <span id="icon-phase2" class="text-xl text-slate-300 group-hover:text-blue-500 transform transition-transform duration-300">▼</span>
+                                </div>
+                            </button>
+                            <div id="content-phase2" class="hidden px-6 pb-8 md:px-8 bg-blue-50/50 border-t border-blue-100/50">
+                                <ul class="list-disc ml-5 mt-6 space-y-3 text-slate-700 text-sm md:text-base">
+                                    <li><strong class="text-blue-900">Audit Blog:</strong> Identify weak/competing articles (e.g., 5 posts about "meetings").</li>
+                                    <li><strong class="text-blue-900">The Merge:</strong> Combine weak posts into comprehensive <strong>Power Pages</strong>.</li>
+                                    <li><strong class="text-blue-900">Technical Fix:</strong> Implement 301 Redirects to aggregate authority and clean up Google's index.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Phase 3 -->
+                        <div class="group relative bg-white border border-l-[6px] border-slate-700 rounded-r-xl shadow-sm hover:shadow-md transition-all overflow-hidden">
+                            <button class="w-full text-left p-6 md:p-8 flex justify-between items-center focus:outline-none" onclick="togglePhase('phase3')">
+                                <div>
+                                    <div class="text-xs font-bold text-slate-600 uppercase tracking-widest mb-1">Days 61-90</div>
+                                    <h3 class="text-xl font-bold text-slate-800">Phase 3: Authority Building</h3>
+                                    <p class="text-slate-500 text-sm mt-1 group-hover:text-slate-700 transition-colors">Objective: Increase DR to compete for national terms.</p>
+                                </div>
+                                <div class="h-10 w-10 bg-slate-50 rounded-full flex items-center justify-center group-hover:bg-slate-200 transition-colors">
+                                    <span id="icon-phase3" class="text-xl text-slate-300 group-hover:text-slate-800 transform transition-transform duration-300">▼</span>
+                                </div>
+                            </button>
+                            <div id="content-phase3" class="hidden px-6 pb-8 md:px-8 bg-slate-50/50 border-t border-slate-200/50">
+                                <ul class="list-disc ml-5 mt-6 space-y-3 text-slate-700 text-sm md:text-base">
+                                    <li><strong class="text-slate-900">Local Digital PR:</strong> Target features in <em>Business in Vancouver (BIV)</em> or <em>BCBusiness</em>.</li>
+                                    <li><strong class="text-slate-900">Topic:</strong> "The Crisis in Vancouver Corporate Culture" (Leveraging Greg's expertise).</li>
+                                    <li><strong class="text-slate-900">Result:</strong> High-value local backlinks to boost Domain Rating (DR).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <footer class="bg-white border-t border-stone-200 p-6 text-center text-slate-400 text-sm">
+            <p>&copy; 2025 Inscape SEO Strategy. Confidential.</p>
+        </footer>
+    </div>
+
+    <!-- Javascript Logic -->
+    <script>
+        // Data Store
+        const keywordData = [
+            // Tier S
+            { kw: "Leadership consulting Vancouver", tier: "S", intent: "Transactional", vol: "Med", rel: 10 },
+            { kw: "Executive coaching Vancouver", tier: "S", intent: "Transactional", vol: "Med", rel: 10 },
+            { kw: "Organizational culture consultant BC", tier: "S", intent: "Transactional", vol: "Low", rel: 10 },
+            { kw: "CEO coaching Vancouver", tier: "S", intent: "Transactional", vol: "Low", rel: 10 },
+            { kw: "Strategic planning facilitator Vancouver", tier: "S", intent: "Transactional", vol: "Low", rel: 9 },
+            { kw: "Change management consultants Vancouver", tier: "S", intent: "Transactional", vol: "Med", rel: 9 },
+            { kw: "Corporate leadership training Vancouver", tier: "S", intent: "Transactional", vol: "Med", rel: 9 },
+            // Tier A
+            { kw: "Best executive coaches Vancouver", tier: "A", intent: "Commercial", vol: "Low", rel: 9 },
+            { kw: "Executive team building Vancouver", tier: "A", intent: "Commercial", vol: "Med", rel: 8 },
+            { kw: "Leadership development programs BC", tier: "A", intent: "Commercial", vol: "Med", rel: 8 },
+            { kw: "Emotional intelligence training for leaders", tier: "A", intent: "Commercial", vol: "Med", rel: 8 },
+            { kw: "Executive coaching rates Vancouver", tier: "A", intent: "Commercial", vol: "Low", rel: 8 },
+            { kw: "Management consulting firms Vancouver", tier: "A", intent: "Commercial", vol: "High", rel: 7 },
+            { kw: "Leadership assessment tools for executives", tier: "A", intent: "Commercial", vol: "Med", rel: 7 },
+            // Tier B (Sample)
+            { kw: "How to improve executive presence", tier: "B", intent: "Info", vol: "High", rel: 6 },
+            { kw: "Benefits of executive coaching", tier: "B", intent: "Info", vol: "Med", rel: 7 }
+        ];
+
+        // --- Core Navigation ---
+        function switchTab(tabId) {
+            // Hide all sections
+            document.querySelectorAll('.tab-content').forEach(el => {
+                el.classList.add('hidden');
+                el.classList.remove('block');
+            });
+            // Show target
+            document.getElementById(tabId).classList.remove('hidden');
+            document.getElementById(tabId).classList.add('block');
+            
+            // Update buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-slate-700/50', 'text-white', 'border-amber-500');
+                btn.classList.add('border-transparent');
+                if(btn.dataset.tab === tabId) {
+                    btn.classList.add('bg-slate-700/50', 'text-white', 'border-amber-500');
+                    btn.classList.remove('border-transparent');
+                }
+            });
+        }
+
+        // --- Execution Plan Accordion ---
+        function togglePhase(phaseId) {
+            const content = document.getElementById(`content-${phaseId}`);
+            const icon = document.getElementById(`icon-${phaseId}`);
+            
+            if (content.classList.contains('hidden')) {
+                // Open
+                content.classList.remove('hidden');
+                content.classList.add('fade-in');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                // Close
+                content.classList.add('hidden');
+                content.classList.remove('fade-in');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // --- Keyword Table Logic ---
+        function renderTable(filter) {
+            const tbody = document.getElementById('keywordTableBody');
+            tbody.innerHTML = '';
+            
+            const filteredData = filter === 'all' 
+                ? keywordData 
+                : keywordData.filter(item => item.tier === filter);
+
+            filteredData.forEach(item => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-amber-50 transition-colors even:bg-stone-50/50";
+                
+                // Color badge for Tier
+                let badgeColor = "bg-slate-200 text-slate-700";
+                if(item.tier === 'S') badgeColor = "bg-amber-100 text-amber-800 border border-amber-200";
+                if(item.tier === 'A') badgeColor = "bg-blue-100 text-blue-800 border border-blue-200";
+
+                tr.innerHTML = `
+                    <td class="p-4 font-medium">${item.kw}</td>
+                    <td class="p-4"><span class="text-[10px] px-2 py-1 rounded-full font-bold uppercase tracking-wide ${badgeColor}">${item.tier}</span></td>
+                    <td class="p-4 text-slate-500 text-sm">${item.intent}</td>
+                    <td class="p-4 text-right font-bold text-slate-700">${item.rel}/10</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        // Filter Buttons
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    // Reset to default style
+                    b.classList.remove('bg-slate-800', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-white', 'text-slate-600', 'border', 'border-stone-200');
+                });
+                
+                // Set Active Style
+                e.target.classList.remove('bg-white', 'text-slate-600', 'border', 'border-stone-200');
+                e.target.classList.add('bg-slate-800', 'text-white', 'shadow-sm');
+                
+                renderTable(e.target.dataset.filter);
+                updateBubbleChart(e.target.dataset.filter);
+            });
+        });
+
+        // --- Charts ---
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Authority Gap Chart (Bar)
+            const ctxAuth = document.getElementById('authorityChart').getContext('2d');
+            new Chart(ctxAuth, {
+                type: 'bar',
+                data: {
+                    labels: ['You (Current)', 'Kwela (Local)', 'Incrementa (Local)', 'McKinsey (Global)'],
+                    datasets: [{
+                        label: 'Domain Rating (DR)',
+                        data: [10, 35, 28, 85],
+                        backgroundColor: [
+                            '#d97706', // You (Amber)
+                            '#ef4444', // Kwela (Red)
+                            '#f59e0b', // Incrementa (Yellow/Orange)
+                            '#10b981'  // McKinsey (Green)
+                        ],
+                        borderRadius: 6,
+                        barPercentage: 0.6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `DR: ${context.raw}`;
+                                }
+                            },
+                            backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                            padding: 12,
+                            cornerRadius: 8
+                        }
+                    },
+                    scales: {
+                        y: { 
+                            beginAtZero: true,
+                            title: { display: true, text: 'Domain Rating (Ahrefs)' },
+                            grid: { color: '#f1f5f9' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+
+            // 2. Competitor Threat Radar (Bar for clarity)
+            const ctxComp = document.getElementById('competitorChart').getContext('2d');
+            new Chart(ctxComp, {
+                type: 'bar',
+                data: {
+                    labels: ['Kwela Leadership', 'Incrementa', 'SME Strategy', 'Korn Ferry / McKinsey'],
+                    datasets: [{
+                        label: 'Threat Level',
+                        data: [3, 2, 2, 1], // High=3, Med=2, Low=1
+                        backgroundColor: [
+                            '#ef4444', // High
+                            '#fbbf24', // Med
+                            '#fbbf24', // Med
+                            '#10b981'  // Low
+                        ],
+                        borderRadius: 4,
+                        barPercentage: 0.7
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            grid: { color: '#f1f5f9' },
+                            ticks: {
+                                callback: function(value) {
+                                    if(value === 1) return 'Low';
+                                    if(value === 2) return 'Med';
+                                    if(value === 3) return 'High';
+                                    return '';
+                                },
+                                stepSize: 1
+                            }
+                        },
+                        y: {
+                            grid: { display: false }
+                        }
+                    },
+                    plugins: { 
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                            padding: 12,
+                            cornerRadius: 8
+                        }
+                    }
+                }
+            });
+
+            // 3. Report Card (Radar)
+            const ctxReport = document.getElementById('reportCardChart').getContext('2d');
+            new Chart(ctxReport, {
+                type: 'radar',
+                data: {
+                    labels: ['Technical Health', 'Content Quality', 'Domain Authority', 'Backlink Profile', 'Local Optimization'],
+                    datasets: [{
+                        label: 'Current Score',
+                        data: [2, 3, 1, 1, 1], // C, B-, D, D, F implied
+                        backgroundColor: 'rgba(217, 119, 6, 0.2)',
+                        borderColor: '#d97706',
+                        pointBackgroundColor: '#d97706',
+                        pointBorderColor: '#fff',
+                        pointHoverBackgroundColor: '#fff',
+                        pointHoverBorderColor: '#d97706',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            angleLines: { color: '#e2e8f0' },
+                            grid: { color: '#e2e8f0' },
+                            pointLabels: {
+                                font: { size: 11, weight: '600' },
+                                color: '#475569'
+                            },
+                            suggestedMin: 0,
+                            suggestedMax: 4,
+                            ticks: { display: false } // Hide numbers
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const val = context.raw;
+                                    const grades = ['F', 'D', 'C', 'B', 'A'];
+                                    return `Grade: ${grades[val] || 'N/A'}`;
+                                }
+                            },
+                            backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                            padding: 12,
+                            cornerRadius: 8
+                        }
+                    }
+                }
+            });
+
+            // 4. Keyword Bubble Chart
+            const ctxBubble = document.getElementById('keywordBubbleChart').getContext('2d');
+            window.bubbleChart = new Chart(ctxBubble, {
+                type: 'bubble',
+                data: {
+                    datasets: [{
+                        label: 'Keywords',
+                        data: keywordData.map(k => ({
+                            x: k.rel,
+                            y: k.vol === 'High' ? 80 : k.vol === 'Med' ? 50 : 20,
+                            r: k.tier === 'S' ? 15 : k.tier === 'A' ? 10 : 6,
+                            tier: k.tier,
+                            kw: k.kw,
+                            intent: k.intent
+                        })),
+                        backgroundColor: function(context) {
+                            const val = context.raw;
+                            if(!val) return;
+                            if(val.tier === 'S') return '#d97706'; // Amber
+                            if(val.tier === 'A') return '#3b82f6'; // Blue
+                            return '#94a3b8'; // Slate
+                        }
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `${context.raw.kw} (${context.raw.intent})`;
+                                }
+                            },
+                            backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                            padding: 12,
+                            cornerRadius: 8
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: { display: true, text: 'Relevance Score (1-10)' },
+                            min: 4,
+                            max: 11,
+                            grid: { color: '#f1f5f9' }
+                        },
+                        y: {
+                            title: { display: true, text: 'Est. Search Volume' },
+                            ticks: {
+                                callback: function(val) {
+                                    if(val === 20) return 'Low';
+                                    if(val === 50) return 'Med';
+                                    if(val === 80) return 'High';
+                                }
+                            },
+                            min: 0,
+                            max: 100,
+                            grid: { color: '#f1f5f9' }
+                        }
+                    }
+                }
+            });
+
+            // Initial Table Render
+            renderTable('all');
+        });
+
+        // Update Bubble Chart on Filter
+        function updateBubbleChart(filter) {
+            const chart = window.bubbleChart;
+            const newData = keywordData
+                .filter(k => filter === 'all' || k.tier === filter)
+                .map(k => ({
+                    x: k.rel,
+                    y: k.vol === 'High' ? 80 : k.vol === 'Med' ? 50 : 20,
+                    r: k.tier === 'S' ? 15 : k.tier === 'A' ? 10 : 6,
+                    tier: k.tier,
+                    kw: k.kw,
+                    intent: k.intent
+                }));
+            
+            chart.data.datasets[0].data = newData;
+            chart.update();
+        }
+
+    </script>
+</body>
+</html>
